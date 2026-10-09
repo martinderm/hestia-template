@@ -8,9 +8,10 @@ Einsatz mit den echten Daten eines Zuhauses füllen.
 
 ## Einstieg
 
-1. **Onboarding:** [`pipelines/00_home-init/`](pipelines/00_home-init/CONTEXT.md) — Plattform/Hub, Name und Basis-URL erfassen.
-2. **Governance:** [`AGENTS.md`](AGENTS.md).
-3. **Topologie:** [`map/`](map/CONTEXT.md).
+1. **Bootstrap:** [`BOOTSTRAP.md`](BOOTSTRAP.md) — Setup auf einer neuen Maschine (Env, Skills, Harness-Links).
+2. **Onboarding:** [`pipelines/00_home-init/`](pipelines/00_home-init/CONTEXT.md) — Plattform/Hub, Name und Basis-URL erfassen.
+3. **Governance:** [`AGENTS.md`](AGENTS.md).
+4. **Topologie:** [`map/`](map/CONTEXT.md).
 
 | Bereich | Pfad | Zweck |
 | :--- | :--- | :--- |

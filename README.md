@@ -7,18 +7,18 @@ verwaltet werden kann.
 
 Entwickelt nach den Standards von **Agent-Architecture** und **ICM-Architect** für die Harnesses:
 
-- **Google Antigravity** (Junction `.gemini` → `.agents`)
+- **Google Antigravity** (optionale `.gemini`-Verlinkung: siehe [`BOOTSTRAP.md`](BOOTSTRAP.md))
 - **OpenCode & OpenChamber** (Config unter `.opencode/opencode.json`)
 - **OpenAI Codex** (nutzt `AGENTS.md`)
 
 ## Schnellstart
 
-1. Vorlage auf das neue Gerät kopieren/klonen.
-2. `.env.example` → `.env` kopieren und ausfüllen (HA-URL/-Token, optional DIRIGERA/Sonos).
-3. Onboarding starten: [`pipelines/00_home-init/CONTEXT.md`](pipelines/00_home-init/CONTEXT.md)
-   (fragt Plattform/Hub, Home-Name und Basis-URL ab).
-4. [`AGENTS.md`](AGENTS.md) für Verhaltens- und Sicherheitsregeln konsultieren.
-5. [`CONTEXT.md`](CONTEXT.md) für das ICM-Routing konsultieren.
+Setup und Optionen: **[`BOOTSTRAP.md`](BOOTSTRAP.md)**. Kurz:
+
+1. Vorlage klonen/kopieren.
+2. `.env.example` → `.env` und ausfüllen.
+3. Onboarding: [`pipelines/00_home-init/CONTEXT.md`](pipelines/00_home-init/CONTEXT.md).
+4. Verhalten: [`AGENTS.md`](AGENTS.md); Routing: [`CONTEXT.md`](CONTEXT.md).
 
 ## Git-Modus
 
@@ -28,18 +28,9 @@ Der Modus kann im Onboarding bzw. Session-Kontext auf `Review` gestellt werden.
 
 ## Referenzierte Skills (nur GitHub)
 
-Das Template liefert **keine** Skills mit (keine Kopie, keine Junction) — es verweist nur auf
-die Upstream-Repositories. Beim Initialisieren bei Bedarf unter `.agents/skills/` einbinden
-(Klon/Submodul/Junction, gitignoriert); Ziel-Versionen in `.agents/upstream.lock.json` (`source: external`).
-
-| Skill | Rolle | Quelle |
-| :--- | :--- | :--- |
-| `workspace-lock` | Single-Harness-/Concurrency-Schutz (optional) | <https://github.com/martinderm/workspace-lock> |
-| `icm-architect` | ICM-Workspace- und System-Map-Governance | <https://github.com/RinDig/icm-architect> |
-| `prompting-pro` | Strukturierte Prompt-Führung | <https://github.com/martinderm/prompting-pro> |
-| `software-engineering-kit` | Software-Lifecycle-Router | <https://github.com/martinderm/software-engineering-kit> |
-
-Normativer Standard (nur verlinkt): **agent-architecture** — <https://github.com/martinderm/shared-memory>
+Das Template liefert **keine** Skills mit (keine Kopie, keine Junction) — nur Verweise auf die
+Upstream-Repositories. GitHub-URLs, Einbindung und Ziel-Versionen stehen in
+[`BOOTSTRAP.md`](BOOTSTRAP.md) und `.agents/upstream.lock.json` (`source: external`).
 
 ## Plattform
 
