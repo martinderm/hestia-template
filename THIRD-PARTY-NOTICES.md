@@ -1,7 +1,7 @@
 # Third-Party Notices
 
-Dieses Repository enthält **keinen** Fremdcode. Die unter `.agents/skills/` gebundenen
-Skills sind reine NTFS-Junctions (Verweise) und werden **nicht** mitverteilt.
+Dieses Repository enthält **keinen** Fremdcode und **keine** Skills. Es verweist nur per
+GitHub-URL auf die Upstream-Repositories; Skills werden nicht mitgeliefert.
 
 Werden Skill-Repositories separat weitergegeben, sind deren eigene Lizenzen zu beachten:
 

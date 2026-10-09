@@ -26,9 +26,11 @@ Entwickelt nach den Standards von **Agent-Architecture** und **ICM-Architect** f
 pusht abgeschlossene Änderungen direkt. Die Neuanlage eines Remote-Repos bleibt ein Human Gate.
 Der Modus kann im Onboarding bzw. Session-Kontext auf `Review` gestellt werden.
 
-## Verlinkte Skills
+## Referenzierte Skills (nur GitHub)
 
-Als Junctions unter `.agents/skills/` gebunden, gepinnt in `.agents/upstream.lock.json`:
+Das Template liefert **keine** Skills mit (keine Kopie, keine Junction) — es verweist nur auf
+die Upstream-Repositories. Beim Initialisieren bei Bedarf unter `.agents/skills/` einbinden
+(Klon/Submodul/Junction, gitignoriert); Ziel-Versionen in `.agents/upstream.lock.json` (`source: external`).
 
 | Skill | Rolle | Quelle |
 | :--- | :--- | :--- |
@@ -37,8 +39,7 @@ Als Junctions unter `.agents/skills/` gebunden, gepinnt in `.agents/upstream.loc
 | `prompting-pro` | Strukturierte Prompt-Führung | <https://github.com/martinderm/prompting-pro> |
 | `software-engineering-kit` | Software-Lifecycle-Router | <https://github.com/martinderm/software-engineering-kit> |
 
-Normativer Standard (verlinken, nicht kopieren): **agent-architecture** —
-<https://github.com/martinderm/shared-memory>
+Normativer Standard (nur verlinkt): **agent-architecture** — <https://github.com/martinderm/shared-memory>
 
 ## Plattform
 
@@ -49,6 +50,6 @@ wird im Onboarding abgefragt.
 
 Dieses Template steht unter der **MIT-Lizenz** — siehe [`LICENSE`](LICENSE).
 
-Die gebundenen Shared Skills (`.agents/skills/`, Junctions) sind **nicht** Teil dieses
+Die **referenzierten** Shared Skills (GitHub, `.agents/skills/`) sind **nicht** Teil dieses
 Repositories und behalten ihre eigenen Lizenzen; Details in
 [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).

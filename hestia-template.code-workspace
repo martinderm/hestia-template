@@ -6,11 +6,11 @@
     },
     {
       "name": "Shared-Memory",
-      "path": "../Shared-Memory"
+      "path": "../../agents/Shared-Memory"
     },
     {
       "name": "skills",
-      "path": "../skills"
+      "path": "../../agents/skills"
     }
   ],
   "settings": {

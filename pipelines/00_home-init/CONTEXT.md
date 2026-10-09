@@ -10,6 +10,7 @@ Grunddaten, bevor Geräte oder Automationen angelegt werden.
 | `03_credentials` | Zugangsdaten in `.env` referenzieren (nie committen) | `.env` (lokal) |
 | `04_seed` | Leere Data-Zones und `map/`-Kataloge initialisieren | `map/**`, `memory/**` |
 | `05_git-mode` | Git-Betriebsmodus bestätigen (Standard: `Full-Auto`) | `git_mode` in `memory/canonical/home-profile.json` |
+| `06_skills` | Benötigte Skills per GitHub einbinden (Klon/Submodul/Junction unter `.agents/skills/`) | `.agents/skills/*` (gitignoriert) |
 
 **Pflicht-Interview (Human Gate):**
 
