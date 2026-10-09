@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 dirigera_client.py — Python-first IKEA DIRIGERA Hub Client (stdlib-only).
 Interacts directly with the IKEA DIRIGERA Hub API (port 8443).

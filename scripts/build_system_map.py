@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 build_system_map.py — Generate and synchronize Smart Home System Map (ICM Form 6).
 Fetches topology from Home Assistant via REST API and generates:

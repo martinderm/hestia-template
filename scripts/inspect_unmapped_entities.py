@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Inspect unmapped entities and domains."""
 import json
 from pathlib import Path

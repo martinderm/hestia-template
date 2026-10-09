@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 deploy_dashboard.py — Deploys a custom Lovelace dashboard to Home Assistant via WebSocket API.
 Pure Python (stdlib-only, zero dependencies).

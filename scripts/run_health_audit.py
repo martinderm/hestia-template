@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 run_health_audit.py — Comprehensive Health Audit for Home Assistant Green.
 Implements the 4-step pipeline defined in pipelines/03_health-audit/CONTEXT.md:

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 ha_client.py — Python-first Home Assistant REST Client (stdlib-only).
 Supports dry-run by default to ensure safe, reviewable Smart Home mutations.

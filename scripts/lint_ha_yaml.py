@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 lint_ha_yaml.py — Validates Home Assistant YAML definitions (automations, scripts, scenes).
 Stdlib-only with basic syntax and structure checks.

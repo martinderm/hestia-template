@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 build_dashboards.py — Generic Lovelace dashboard generator (stdlib-only).
 

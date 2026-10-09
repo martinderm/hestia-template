@@ -44,3 +44,11 @@ Normativer Standard (verlinken, nicht kopieren): **agent-architecture** —
 
 Standard ist **Home Assistant**, der Agent ist aber plattformoffen; die konkrete Plattform
 wird im Onboarding abgefragt.
+
+## License
+
+Dieses Template steht unter der **MIT-Lizenz** — siehe [`LICENSE`](LICENSE).
+
+Die gebundenen Shared Skills (`.agents/skills/`, Junctions) sind **nicht** Teil dieses
+Repositories und behalten ihre eigenen Lizenzen; Details in
+[`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """
 sonos_client.py — Python-first Sonos Multiroom & Topology Client (stdlib-only).
 Directly queries local Sonos players via UPnP SOAP on port 1400.
