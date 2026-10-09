@@ -20,6 +20,12 @@ Entwickelt nach den Standards von **Agent-Architecture** und **ICM-Architect** f
 4. [`AGENTS.md`](AGENTS.md) für Verhaltens- und Sicherheitsregeln konsultieren.
 5. [`CONTEXT.md`](CONTEXT.md) für das ICM-Routing konsultieren.
 
+## Git-Modus
+
+**Standard ist `Full-Auto`:** Der Agent validiert, committet und (bei konfiguriertem Upstream)
+pusht abgeschlossene Änderungen direkt. Die Neuanlage eines Remote-Repos bleibt ein Human Gate.
+Der Modus kann im Onboarding bzw. Session-Kontext auf `Review` gestellt werden.
+
 ## Verlinkte Skills
 
 Als Junctions unter `.agents/skills/` gebunden, gepinnt in `.agents/upstream.lock.json`:

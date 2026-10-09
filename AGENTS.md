@@ -7,10 +7,20 @@ Vorlage für Smart-Home-Management & Orchestrierung. Beginne immer bei [`CONTEXT
 > [`pipelines/00_home-init/`](pipelines/00_home-init/CONTEXT.md) abgefragt und in
 > `memory/canonical/home-profile.json` festgehalten.
 
-## Git-Modus (Review-First)
+## Git-Modus (Full-Auto)
 
-- Standard ist `Review`: Alle Änderungen bleiben ungestaged.
-- Commit, Push oder Remote-Mutationen nur nach ausdrücklicher Anweisung.
+**Standard dieses Templates ist `Full-Auto`:** Kohärente, abgeschlossene Änderungen werden
+zuerst validiert und dann mit einer aussagekräftigen Commit-Message gestaged und committet.
+Ist ein Upstream konfiguriert, wird der Commit sofort gepusht.
+
+- **Gilt für Agent-Templates:** Beim Initialisieren startet der Agent in `Full-Auto`
+  (Teil des Onboardings, siehe [`pipelines/00_home-init/`](pipelines/00_home-init/CONTEXT.md)).
+- **Harte Stopps (bleiben Human Gate):** Anlegen/Ändern von Remote-Hosting, Force-Push,
+  Umschreiben veröffentlichter Historie, Cross-Workspace-Mutationen, Secrets im Commit,
+  Mitschicken von `.agents/session.lock`.
+- **Rückstellung jederzeit möglich:** Der Modus kann im Session-Kontext oder im Onboarding
+  auf `Review` gesetzt werden; die Wahl gilt für alle in der Session berührten Repositories.
+- **`Review`:** Auf ausdrückliche Ansage bleiben Änderungen ungestaged.
 
 ## Workspace-Locking (OPTIONAL, On-Demand)
 

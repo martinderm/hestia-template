@@ -4,5 +4,6 @@
   "timezone": "Europe/Vienna",
   "platform": "home_assistant",
   "hass_url": "http://homeassistant.local:8123",
-  "notes": "Beispiel. Beim Onboarding nach memory/canonical/home-profile.json kopieren und anpassen."
+  "git_mode": "full-auto",
+  "notes": "Beispiel. Beim Onboarding nach memory/canonical/home-profile.json kopieren und anpassen. git_mode: 'full-auto' (Standard für Templates) oder 'review'."
 }

@@ -39,3 +39,9 @@ Einsatz mit den echten Daten eines Zuhauses füllen.
 Standard ist **Home Assistant** (z. B. Green/Yellow), aber der Agent ist plattformoffen.
 Die konkrete Plattform wird in [`pipelines/00_home-init/`](pipelines/00_home-init/CONTEXT.md) abgefragt;
 die Skripte binden HA über `HASS_URL`/`HASS_TOKEN` aus `.env` an.
+
+## Git-Modus
+
+Standard ist **`Full-Auto`** (validieren → committen → bei Upstream pushen). Die Neuanlage
+eines Remotes und alle Remote-Hosting-Änderungen bleiben Human Gates. Details in
+[`AGENTS.md`](AGENTS.md); Rückstellung auf `Review` im Onboarding oder Session-Kontext.

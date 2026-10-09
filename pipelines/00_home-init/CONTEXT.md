@@ -9,6 +9,7 @@ Grunddaten, bevor Geräte oder Automationen angelegt werden.
 | `02_home-profile` | Name, Ort/Zeitzone und Basis-URL des Zuhauses erfassen | `memory/canonical/home-profile.json` |
 | `03_credentials` | Zugangsdaten in `.env` referenzieren (nie committen) | `.env` (lokal) |
 | `04_seed` | Leere Data-Zones und `map/`-Kataloge initialisieren | `map/**`, `memory/**` |
+| `05_git-mode` | Git-Betriebsmodus bestätigen (Standard: `Full-Auto`) | `git_mode` in `memory/canonical/home-profile.json` |
 
 **Pflicht-Interview (Human Gate):**
 
@@ -16,6 +17,9 @@ Grunddaten, bevor Geräte oder Automationen angelegt werden.
 2. **Wie heißt das Zuhause** und in welcher Zeitzone liegt es?
 3. **Wie wird der Agent angebunden?** (`HASS_URL`/`HASS_TOKEN` oder plattformspezifische Werte)
 4. **Welche optionalen Hubs** sind vorhanden? (z. B. IKEA DIRIGERA, Sonos)
+5. **Git-Betriebsmodus:** Standard ist `Full-Auto` (direktes Validieren/Committen/Pushen bei konfiguriertem Upstream). Auf Wunsch `Review`.
 
 **Regel:** Ohne bestätigtes Home-Profil bleibt das Onboarding offen; die Plattform ist
 optional, aber die Wahl muss dokumentiert sein. Credentials werden nie in Git überführt.
+Die **Neuanlage** eines Remote-Repositories/Hostings bleibt auch in `Full-Auto` ein
+ausdrückliches Human Gate.
