@@ -1,0 +1,12 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": [".agents/skills"],
+  "permissions": [
+    { "action": "edit", "resource": "*", "effect": "ask" },
+    { "action": "shell", "resource": "*", "effect": "ask" },
+    { "action": "external_directory", "resource": "D:/users/dagobert/agents/**", "effect": "allow" },
+    { "action": "external_directory", "resource": "D:\\users\\dagobert\\agents\\**", "effect": "allow" },
+    { "action": "external_directory", "resource": "D:/users/dagobert/agents-templates/**", "effect": "allow" },
+    { "action": "external_directory", "resource": "D:\\users\\dagobert\\agents-templates\\**", "effect": "allow" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://github.com/martinderm/agent-architecture/schemas/upstream-lock.schema.json",
+  "workspace_name": "hestia-template",
+  "created_at": "2026-10-09T19:26:23+00:00",
+  "updated_at": "2026-10-09T19:26:23+00:00",
+  "agent_architecture": {
+    "version": "1.0",
+    "commit": "6221799",
+    "date": "2026-10-08T17:51:15+02:00"
+  },
+  "skills": {
+    "workspace-lock": {
+      "commit": "f6e51b0",
+      "date": "2026-09-10T08:09:25+02:00",
+      "source": "submodule"
+    },
+    "icm-architect": {
+      "commit": "e16cafe",
+      "date": "2026-08-25T14:01:37-04:00",
+      "source": "submodule"
+    },
+    "prompting-pro": {
+      "commit": "9ca0ff9",
+      "date": "2026-09-09T23:20:10+02:00",
+      "source": "submodule"
+    },
+    "software-engineering-kit": {
+      "commit": "e4550e1",
+      "date": "2026-10-09T11:07:44+02:00",
+      "source": "submodule"
+    }
+  }
+}

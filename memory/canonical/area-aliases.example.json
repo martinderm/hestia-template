@@ -1,0 +1,5 @@
+{
+  "_comment": "Beispiel: lokale Namensvarianten von Area-Präfixen. Nach memory/canonical/area-aliases.json kopieren.",
+  "living_room": ["lounge", "salon"],
+  "office": ["study", "workspace"]
+}

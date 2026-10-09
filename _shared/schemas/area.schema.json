@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Area",
+  "description": "Physischer Raum oder logische Zone im Smart Home (ICM Form 6).",
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string", "description": "Kanonische Area-ID (lowercase, underscore), z. B. living_room" },
+    "name": { "type": "string", "description": "Anzeigename des Raums" },
+    "aliases": { "type": "array", "items": { "type": "string" }, "description": "Lokale Namensvarianten des Area-Präfixes" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}

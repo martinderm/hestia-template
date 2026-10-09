@@ -1,0 +1,14 @@
+{
+  "$schema": "https://github.com/martinderm/agent-architecture/schemas/icm-profile.schema.json",
+  "profile_version": "1.0",
+  "form": "umbrella",
+  "status": "planned",
+  "entrypoint": "CONTEXT.md",
+  "data_zones": true,
+  "capabilities": {
+    "stage_contracts": false,
+    "execution_tracking": false,
+    "approval_gates": false,
+    "data_zones": true
+  }
+}

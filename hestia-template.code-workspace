@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "name": "hestia-template",
+      "path": "."
+    },
+    {
+      "name": "Shared-Memory",
+      "path": "../Shared-Memory"
+    },
+    {
+      "name": "skills",
+      "path": "../skills"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.agents/session.lock": false
+    }
+  }
+}

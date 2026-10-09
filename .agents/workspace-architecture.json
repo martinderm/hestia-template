@@ -1,0 +1,55 @@
+{
+  "$schema": "https://github.com/martinderm/agent-architecture/schemas/workspace-architecture.schema.json",
+  "profile_version": "1.0",
+  "status": "planned",
+  "control_plane": {
+    "kind": "icm",
+    "topology": "umbrella",
+    "entrypoint": "CONTEXT.md",
+    "provider_manifest": null,
+    "legacy_icm_profile": ".agents/icm-profile.json",
+    "state_store": "filesystem",
+    "selection_rationale": "Smart-Home-Management erfordert langlebige Dateitransparenz für Topologie (System Map) und Workflows (Onboarding, Automation, Audits). Physische Aktionen erfordern Staging und Human Gates. Diese Vorlage ist instanzfrei und wird beim Onboarding mit einem konkreten Zuhause befüllt."
+  },
+  "capabilities": {
+    "execution_tracking": false,
+    "approval_gates": false,
+    "data_zones": true,
+    "artifact_promotion": false,
+    "protected_data_policy": true
+  },
+  "trust_boundary": {
+    "cloud_input": "untrusted_external",
+    "instructions_are_data": true
+  },
+  "protected_data": [
+    {
+      "classification": "credentials",
+      "path_patterns": [
+        ".env",
+        ".env.*",
+        "*.token",
+        "secrets.json"
+      ],
+      "export_policy": "prohibited",
+      "promotion_policy": "prohibited"
+    },
+    {
+      "classification": "home-topology-data",
+      "path_patterns": [
+        "memory/canonical/**",
+        "map/**"
+      ],
+      "export_policy": "approval_required",
+      "promotion_policy": "approval_required"
+    },
+    {
+      "classification": "untrusted-cloud",
+      "path_patterns": [
+        "memory/cloud/**"
+      ],
+      "export_policy": "prohibited",
+      "promotion_policy": "approval_required"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Device",
+  "description": "Physisches Hardware-Gerät im Smart Home (ICM Form 6).",
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string", "description": "Geräte-ID (z. B. HA device_id)" },
+    "name": { "type": "string" },
+    "manufacturer": { "type": "string" },
+    "model": { "type": "string" },
+    "sw_version": { "type": "string" },
+    "hw_version": { "type": "string" },
+    "area_id": { "type": "string" },
+    "entities": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

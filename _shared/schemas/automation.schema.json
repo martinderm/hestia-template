@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Automation",
+  "description": "Home Assistant Automation (moderne action-Syntax ab HA 2024+).",
+  "type": "object",
+  "required": ["alias", "trigger", "action"],
+  "properties": {
+    "alias": { "type": "string" },
+    "description": { "type": "string" },
+    "mode": { "enum": ["single", "restart", "queued", "parallel"] },
+    "trigger": { "type": "array" },
+    "condition": { "type": "array" },
+    "action": { "type": "array" }
+  },
+  "additionalProperties": true
+}

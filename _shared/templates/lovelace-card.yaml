@@ -1,0 +1,16 @@
+# Vorlage: Native Lovelace Card (Vanilla First)
+# Bausteine für generierte oder manuell gepflegte Dashboards.
+type: entities
+title: Beispielbereich
+show_header_toggle: false
+entities:
+  - entity: light.living_room_ceiling
+  - entity: sensor.living_room_temperature
+---
+# Thermostat-Karte (Klima)
+type: thermostat
+entity: climate.living_room
+---
+# Media-Control-Karte (Audio)
+type: media-control
+entity: media_player.living_room

@@ -1,0 +1,30 @@
+# Ephemeral Locks & Sessions
+.agents/session.lock
+session.lock
+
+# Windows Directory Junctions & Reparse Points (never track in Git)
+.gemini/
+.gemini
+.agents/skills/
+.agents/skills
+data/cloud/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.token
+secrets.json
+
+# Temporary & Cache
+tmp/
+.tmp/
+scratch/
+__pycache__/
+*.pyc
+
+# Local Test / Editor & OS
+.vscode/
+*.log
+.DS_Store
+Thumbs.db

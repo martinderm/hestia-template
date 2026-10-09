@@ -1,0 +1,22 @@
+# Vorlage: Home Assistant Automation (moderne Syntax ab HA 2024+)
+# Ersetze die Beispiel-Entitäten durch echte Entitäten des Zuhauses.
+alias: "Area: Funktion bei Bedingung"
+description: "Beschreibe Zweck und Auslöser der Automation."
+mode: single
+
+trigger:
+  - trigger: state
+    entity_id: binary_sensor.hallway_motion
+    to: "on"
+
+condition:
+  - condition: numeric_state
+    entity_id: sensor.hallway_illuminance
+    below: 30
+
+action:
+  - action: light.turn_on
+    target:
+      entity_id: light.hallway_ceiling
+    data:
+      brightness_pct: 80
