@@ -5,8 +5,8 @@
   "updated_at": "2026-10-09T19:26:23+00:00",
   "agent_architecture": {
     "version": "1.0",
-    "commit": "6221799",
-    "date": "2026-10-08T17:51:15+02:00"
+    "commit": "b698b99",
+    "date": "2026-10-09T21:38:23+02:00"
   },
   "skills": {
     "workspace-lock": {
